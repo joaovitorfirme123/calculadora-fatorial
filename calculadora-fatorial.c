@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-  int aux;
-  int fatorial;
+  double aux;
+  double fatorial;
   printf("Digite o número a ser fatorado: ");
-  scanf("%d", & aux);
+  scanf("%lf", & aux);
   for(fatorial = 1; aux>=1; --aux){
     fatorial *= aux;
 
   }
-  printf("\nO resultado é: %d", fatorial);
+  printf("\nO resultado é: %.0lf", fatorial);
 
   return 0;
 }
